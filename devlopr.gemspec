@@ -1,5 +1,5 @@
-# frozen_string_literal: true
-
+# frozen_string_literal: false
+```
 Gem::Specification.new do |spec|
   spec.name          = "devlopr"
   spec.version       = "0.4.5"
@@ -26,3 +26,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 2.1.4"
   spec.add_development_dependency "rake", "~> 12.0"
 end
+```
