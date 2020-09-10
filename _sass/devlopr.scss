@@ -12,8 +12,8 @@ html[data-theme="dark"] {
     --highlight-color: hsl(0, 0%, 60%);
     --light-border-color: hsl(0, 0%, 30%);
     --light-text-color: rgb(199, 199, 204);
-    --link-color: rgb(189, 17, 17);
-    --link-color-visited: hsl(250, 100%, 60%);
+    --link-color: rgb(49, 17, 189);
+    --link-color-visited: hsl(250, 87%, 39%);
     --main-background-color: rgb(28, 28, 30);
     --main-text-color: rgb(139, 139, 139);
     --medium-text-color: hsl(0, 0%, 70%);
@@ -31,8 +31,8 @@ html[data-theme="light"] {
     --highlight-color: hsl(0, 0%, 80%);
     --light-border-color: rgb(230, 230, 230);
     --light-text-color: rgb(72, 72, 74);
-    --link-color: rgb(80, 3, 35);
-    --link-color-visited: hsl(350, 100%, 37%);
+    --link-color: rgb(3, 8, 80);
+    --link-color-visited: hsl(246, 100%, 37%);
     --main-background-color: rgb(243, 243, 243);
     --main-text-color: rgb(51, 51, 51);
     --medium-text-color: hsl(0, 40%, 2%);
@@ -53,9 +53,9 @@ html[data-theme="light"] {
         --highlight-color: hsl(0, 0%, 60%);
         --light-border-color: hsl(0, 0%, 30%);
         --light-text-color: rgb(199, 199, 204);
-        --link-color: #cc2626;
+        --link-color: #3785dd;
         --nav-color: #131313;
-        --search-color: #c20534;
+        --search-color: #0547c2;
         --nav-link-color: rgba(245, 100, 112, 0.5);
         --link-color-visited: hsl(250, 94%, 69%);
         --main-background-color: rgb(28, 28, 30);
@@ -75,11 +75,11 @@ html[data-theme="light"] {
         --highlight-color: hsl(0, 0%, 80%);
         --light-border-color: rgb(230, 230, 230);
         --light-text-color: rgb(56, 56, 58);
-        --link-color: #6d0909;
+        --link-color: #0e0466;
         --nav-color: #ffffff;
-        --nav-link-color: #641e1e;
-        --search-color: #7c0000;
-        --link-color-visited: hsl(118, 98%, 21%);
+        --nav-link-color: #1e2b64;
+        --search-color: #0c007c;
+        --link-color-visited: hsl(204, 98%, 21%);
         --main-background-color: rgb(255, 255, 255);
         --main-text-color: rgb(51, 51, 51);
         --medium-text-color: hsl(0, 0%, 20%);
@@ -489,7 +489,7 @@ header {
 /*backgroun image set   https://images.pexels.com/photos/10922/pexels-photo-10922.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940*/
 .jumbotron {
     background-color: var(--main-background-color) !important;
-    background-image: url('https://www.photographize.co/blog/index_files/0n1kp4bh.jpg');
+    background-image: url('https://c.wallhere.com/photos/b1/1d/Alexandre_Cabanel_painting_angel_fallen_angel-1676343.jpg!d');
     background-attachment: fixed;
     background-size: auto 100%;
     background-position: center;
@@ -639,7 +639,7 @@ header {
 }
 .article-card-link, .article-card-link:hover{
     text-decoration: none;
-    color: rgb(255, 0, 55) !important;
+    color: rgb(17, 0, 255) !important;
 }
 .article-card{
     list-style-type: none;
@@ -696,7 +696,7 @@ header {
     }
     .nav-link {
         font-size: 15px !important;
-        color: rgb(255, 137, 152);
+        color: rgb(155, 137, 255);
         font-weight: 600;
         
     }
