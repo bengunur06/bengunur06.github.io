@@ -12,7 +12,7 @@ html[data-theme="dark"] {
     --highlight-color: hsl(0, 0%, 60%);
     --light-border-color: hsl(0, 0%, 30%);
     --light-text-color: rgb(199, 199, 204);
-    --link-color: #f69801;
+    --link-color: rgb(189, 17, 17);
     --link-color-visited: hsl(250, 100%, 60%);
     --main-background-color: rgb(28, 28, 30);
     --main-text-color: rgb(139, 139, 139);
@@ -31,9 +31,9 @@ html[data-theme="light"] {
     --highlight-color: hsl(0, 0%, 80%);
     --light-border-color: rgb(230, 230, 230);
     --light-text-color: rgb(72, 72, 74);
-    --link-color: rgb(0, 112, 201);
-    --link-color-visited: hsl(250, 100%, 37%);
-    --main-background-color: rgb(255, 255, 255);
+    --link-color: rgb(80, 3, 35);
+    --link-color-visited: hsl(350, 100%, 37%);
+    --main-background-color: rgb(243, 243, 243);
     --main-text-color: rgb(51, 51, 51);
     --medium-text-color: hsl(0, 40%, 2%);
     --sidebar-color: hsl(0, 0%, 90%);
@@ -53,13 +53,13 @@ html[data-theme="light"] {
         --highlight-color: hsl(0, 0%, 60%);
         --light-border-color: hsl(0, 0%, 30%);
         --light-text-color: rgb(199, 199, 204);
-        --link-color: #f69801;
+        --link-color: #cc2626;
         --nav-color: #131313;
-        --search-color: #FF7901;
-        --nav-link-color: rgba(255, 255, 255, .5);
-        --link-color-visited: hsl(250, 100%, 60%);
+        --search-color: #c20534;
+        --nav-link-color: rgba(245, 100, 112, 0.5);
+        --link-color-visited: hsl(250, 94%, 69%);
         --main-background-color: rgb(28, 28, 30);
-        --main-text-color: rgb(139, 139, 139);
+        --main-text-color: rgb(182, 182, 182);
         --medium-text-color: hsl(0, 0%, 70%);
         --underline-color: hsl(0, 0%, 50%);
         --social-link-color: #ffffff;
@@ -74,12 +74,12 @@ html[data-theme="light"] {
         --box-background-color: rgb(249, 249, 250);
         --highlight-color: hsl(0, 0%, 80%);
         --light-border-color: rgb(230, 230, 230);
-        --light-text-color: rgb(72, 72, 74);
-        --link-color: #ca6521;
+        --light-text-color: rgb(56, 56, 58);
+        --link-color: #6d0909;
         --nav-color: #ffffff;
-        --nav-link-color: #111111;
-        --search-color: #ababab;
-        --link-color-visited: hsl(250, 100%, 37%);
+        --nav-link-color: #641e1e;
+        --search-color: #7c0000;
+        --link-color-visited: hsl(118, 98%, 21%);
         --main-background-color: rgb(255, 255, 255);
         --main-text-color: rgb(51, 51, 51);
         --medium-text-color: hsl(0, 0%, 20%);
@@ -225,7 +225,7 @@ header {
 }
 
 .navbar-dark .navbar-brand {
-    color: #ff7601 !important;
+    color: #c50626 !important;
 }
 .navbar-dark .navbar-nav .nav-link {
     color: var(--nav-link-color) !important;
@@ -294,7 +294,7 @@ header {
         width: 5%;
         cursor: pointer;
         text-align: center;
-        color: orange;
+        color: rgb(255, 0, 64);
 
       .icon {
         vertical-align: text-top;
@@ -302,7 +302,7 @@ header {
         fill: #fff;
 
         &:hover {
-          fill: orange;
+          fill: rgb(255, 0, 34);
           transform: rotate(90deg);
         }
       }
@@ -327,13 +327,13 @@ header {
         position: absolute;
         top: 10%;
         width: 100%;
-        color: #f69801;
+        color: #f60122;
         background: rgba(0, 0, 0, 0);
         font-size: 30px;
         font-weight: 300;
         text-align: center;
         border: 0px;
-        border-bottom: 1px dashed #ffa000;
+        border-bottom: 1px dashed #ff0040;
         margin: 0px auto;
         margin-top: -51px;
         padding-left: 30px;
@@ -342,7 +342,7 @@ header {
 
       &:focus {
         border: 0;
-        border-bottom: 1px dashed #ffa000;
+        border-bottom: 1px dashed #ff002b;
       }
     }
 
@@ -514,7 +514,7 @@ header {
 
 .jumbotron-heading{
     color: #111;
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .lead {
@@ -530,7 +530,7 @@ header {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: coral;
+    color: rgb(189, 17, 17);
 }
 
 .product{
@@ -577,7 +577,7 @@ header {
 }
 
 .lg-progress-bar .lg-progress {
-    background-color: #db980f !important;
+    background-color: #db0f31 !important;
     height: 4px;
     width: 0;
 }
@@ -638,7 +638,7 @@ header {
 }
 .article-card-link, .article-card-link:hover{
     text-decoration: none;
-    color: orange !important;
+    color: rgb(255, 0, 55) !important;
 }
 .article-card{
     list-style-type: none;
@@ -695,10 +695,11 @@ header {
     }
     .nav-link {
         font-size: 15px !important;
-        color: var(--main-text-color);
+        color: rgb(255, 137, 152);
         font-weight: 600;
+        
     }
-
+    /*-- var(--main-text-color); */
 }
 
 #author_projects {
