@@ -56,7 +56,7 @@ html[data-theme="light"] {
         --link-color: #3785dd;
         --nav-color: #131313;
         --search-color: #0547c2;
-        --nav-link-color: rgba(49, 114, 253, 0.5);
+        --nav-link-color: rgb(63, 97, 161);
         --link-color-visited: hsl(250, 94%, 69%);
         --main-background-color: rgb(28, 28, 30);
         --main-text-color: rgb(182, 182, 182);
@@ -225,7 +225,7 @@ header {
 }
 
 .navbar-dark .navbar-brand {
-    color: #0633c5 !important;
+    color: #5d83ff !important;
 }
 .navbar-dark .navbar-nav .nav-link {
     color: var(--nav-link-color) !important;
@@ -535,7 +535,7 @@ header {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: rgb(35, 79, 145);
+    color: rgb(70, 118, 190);
     
 }
 
@@ -700,9 +700,9 @@ header {
         margin-top:50px;
     }
     .nav-link {
-        font-size: 15px !important;
-        color: rgb(49, 106, 230);
-        font-weight: 600;
+        font-size: 17px !important;
+        color: rgb(33, 95, 230);
+        font-weight: 800;
         
     }
     /*-- var(--main-text-color); */
