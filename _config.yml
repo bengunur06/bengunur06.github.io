@@ -122,7 +122,7 @@ paginate_path: "/blog/page/:num/"
 #   ignore:
 #     envs: ['development']
 
- Archives
+# Archives
  jekyll-archives:
    enabled:
      - categories

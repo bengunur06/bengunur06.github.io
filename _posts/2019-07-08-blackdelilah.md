@@ -4,7 +4,9 @@ author: Bengünur Baş
 title: Black Delilah 
 date: 2019-07-08T23:43:20.613Z  30.05.2019
 thumbnail: /assets/img/posts/hello.jpg
-category: 2019
+category: 
+            - 2019
+            - yurt 
 summary: Yeni tanıştığım insanlarla yurda yetişme çabamız (biri fransız)  
 keywords: erasmus, yurt , erasmus başvurum ,marvel ,spider-man
 permalink: /blog/sinema-spider-man-yurt-19
