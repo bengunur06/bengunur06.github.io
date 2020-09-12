@@ -3,11 +3,11 @@ layout: post
 title: "Love of Knowledge"
 summary: Some night thoughts 
 author: Bengünur Baş
-date: '2020-05-30 04:52:23 +0530'
+date: '2019-05-30 04:52:23 +0530'
 category: 
             - 2019
             - kedi
-thumbnail: /assets/img/posts/hello.jpg
+thumbnail: /assets/img/posts/john-locke-19.jpg
 keywords: tabula rasa , think , night
 permalink: /blog/tabula-rasa-19
 ---
