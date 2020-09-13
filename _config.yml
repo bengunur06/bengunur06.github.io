@@ -19,8 +19,8 @@ urls:
       url : /contact
 #   - text: Styleguide
 #      url: /styleguide
-    - text: Get Started
-      url: /get-started
+#    - text: Get Started
+#      url: /get-started
 
 # Edit these details
 
@@ -54,7 +54,7 @@ author_education_details:
                 description: Bachelor of Technology ,Programming with C,C++ /Object Oriented Programming /Data Structures /Data Bases (SQL) /Economy (macro-micro)/ Professional English / Programming Languages /Computer Graphisc /Network /Digital Logic
                 visibility: true
               - college_logo: unisannio-logo.png
-                college_name: Ankara University
+                college_name: UNIVERSITÀ DEGLI STUDI DEL SANNIO
                 college_url: https://www.unisannio.it/
                 college_degree: Computer Engineering
                 description: Bachelor of Technology ,I was an Erasmus exchange student in Unisannio.the lectures I take were Artificial intelligence, Production Systems, Android Programming
