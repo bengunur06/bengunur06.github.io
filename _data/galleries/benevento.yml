@@ -1,13 +1,13 @@
 picture_path: benevento
 preview:
-  filename: benevento1
+  filename: 1
   original: benevento1.jpg
   sizes:
-  - tbenevento1.jpg
-  thumbnail: tbenevento1.jpg
+  - benevento1.jpg
+  thumbnail: benevento1.jpg
 pictures:
 - filename: benevento1
   original: benevento1.jpg
   sizes:
-  - tbenevento1.jpg
+  - bbenevento1.jpg
   thumbnail: tbenevento1.jpg

@@ -11,12 +11,12 @@
 
 -
   title: Benevento
-  directory: benevento
+  directory: /benevento
   preview:
     filename: benevento1.jpg
-    original: tbenevento1.jpg
+    original: /benevento1.jpg
     sizes:
-    - tbenevento1.jpg
-    thumbnail: tbenevento1.jpg
+    - /benevento1.jpg
+    thumbnail: /benevento1.jpg
 
 
