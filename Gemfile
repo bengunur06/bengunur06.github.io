@@ -6,8 +6,8 @@ gem 'kramdown'
 gem 'rack-jekyll'
 gem 'rake'
 gem 'puma'
-
-
+gem "faraday", "~> 0.17"
+gem "octokit"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
@@ -22,7 +22,6 @@ group :jekyll_plugins do
     gem 'jekyll-sitemap', '~> 1.4.0'
     gem 'jekyll-menus', '~> 0.6.1'
     gem 'jekyll-admin', '~> 0.10.2'
-    gem "rack", ">= 2.1.4"
 
 
 end
