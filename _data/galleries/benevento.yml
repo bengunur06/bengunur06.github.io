@@ -1,0 +1,13 @@
+picture_path: benevento 
+preview:
+  filename: benevento1
+  original: benevento1.jpg
+  sizes:
+  - tbenevento1.jpg
+  thumbnail: tbenevento1.jpg
+pictures:
+- filename: benevento1
+  original: benevento1.jpg
+  sizes:
+  - tbenevento1.jpg
+  thumbnail: tbenevento1.jpg

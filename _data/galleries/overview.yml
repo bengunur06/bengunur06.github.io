@@ -7,3 +7,16 @@
     sizes:
     - 1-thumbnail.jpg
     thumbnail: 1-thumbnail.jpg
+
+
+-
+  title: Benevento
+  directory: benevento
+  preview:
+    filename: benevento1.jpg
+    original: benevento1.jpg
+    sizes:
+    - benevento1.jpg
+    thumbnail: benevento1.jpg
+
+
