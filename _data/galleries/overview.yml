@@ -14,9 +14,9 @@
   directory: benevento
   preview:
     filename: benevento1.jpg
-    original: benevento1.jpg
+    original: tbenevento1.jpg
     sizes:
-    - benevento1.jpg
-    thumbnail: benevento1.jpg
+    - tbenevento1.jpg
+    thumbnail: tbenevento1.jpg
 
 
