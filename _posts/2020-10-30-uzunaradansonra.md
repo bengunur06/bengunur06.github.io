@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Welcome to new site "
-summary: I did a lot of changes around here 
+title:  "Bugün Ayın Batışını izledim"
+summary: sabah 06:06 düşüncelerim yargılamayın  
 author: Bengünur Baş  
-date: '2020-09-10 09:45:23 +0530'
-category: welcome 
+date: '2020-10-30 06:06:23 +0530'
+category: 2020 
 thumbnail: /assets/img/posts/space.jpg
 keywords: devlopr jekyll, blog,cat,begunur bas,bengünunur baş,ruby used
 permalink: /blog/welcome-to-my-new-blog
