@@ -47,7 +47,7 @@ devlopr uses Markdown Files to generate data like Blog Posts, Gallery, Shop Prod
 - CI/CD Support using [Travis CI](https://sujaykundu.com/blog/posts/deploy-jekyll-blog-using-github-pages-and-travis-ci/), Buddy , Circle CI
 
 #### Jekyll Admin
-You can easily manage the site locally using the Jekyll admin : [http://localhost:4000/admin](http://localhost:4000/admin)
+You can easily manage the site locally using the Jekyll admin : [https://localhost:4000/admin](https://localhost:4000/admin)
 
 ![Jekyll Admin](https://github.com/sujaykundu777/devlopr-jekyll/blob/master/assets/img/jekyll-admin.PNG?raw=true)
 
@@ -87,7 +87,7 @@ Running the container :
 
 You can run the app in development mode : (your changes will be reflected --watch moded)
 
-Serve the site at http://localhost:4000 :
+
 
 `docker-compose -f docker-compose-dev.yml up --build --remove-orphans`
 
@@ -95,7 +95,7 @@ Serve the site at http://localhost:4000 :
 
 You can run the app in production mode : (your changes will be reflected --watch moded)
 
-Serve the site at http://localhost:4000 :
+
 
 `docker-compose -f docker-compose-prod.yml up --build --remove-orphans`
 
@@ -111,7 +111,7 @@ This project exists thanks to all the people who contribute.
 
 Contributions are more than just welcome. Fork this repo and create a new branch, then submit a pull request
 
-- 1.Fork it [http://github.com/sujaykundu777/devlopr-jekyll/fork](http://github.com/sujaykundu777/devlopr-jekyll/fork )
+
 
 - 2.Create your feature branch
 `git checkout -b my-new-feature`

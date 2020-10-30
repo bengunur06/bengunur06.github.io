@@ -101,7 +101,7 @@ or you can also serve using :
 $ jekyll serve
 ```
 
-Visit [http://localhost:4000](http://localhost:4000) for development server
+
 
 ![Devlopr Jekyll Repo](/assets/img/posts/fork4.png){:class="img-fluid"}
 
@@ -168,5 +168,5 @@ Visit your Github Repo settings ! Enable master branch as Github Pages Branch :
 
 > Congrats ! On your new shining Blog !
 
-You can visit the blog using [http://your-github-username.github.io](http://your-github-username.github.io).
+You can visit the blog using [https://your-github-username.github.io](https://your-github-username.github.io).
 
