@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>Down for maintenace</head>
+    <style type="text/css">
+        body {
+            background-color: #000000;
+            margin: 0px;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            text-align: center;
+        }
+        #info {
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+            position:absolute;
+            top: 40px;
+            width: 100%;
+            padding:5%;
+            z-index: 100;
+            font-size:50px
+        }
+
+    </style>
+    <meta charset="UTF-8">
+</html>
+
+<body >
+<div id="info"></div>
+		<script type="text/javascript" src="js/Three.js"></script>
+		<script type="text/javascript" src="js/Detector.js"></script>
+		<script type="text/javascript" src="js/RequestAnimationFrame.js"></script>
+		<script type="text/javascript" src="js/Stats.js"></script>
+		<script type="text/javascript">
+			//Cubes WebGL Demo by Felix Turner - www.airtight.cc
+
+			if(!Detector.webgl)
+				Detector.addGetWebGLMessage();
+
+			var MATERIAL_COUNT = 30;
+			var CUBE_SIZE = 300;
+			var CUBE_INCREMENT = 100;
+			var SPREAD = 1000;
+
+			var scene;
+			var renderer;
+			var camera;
+			var stats;
+			var cubes = [];
+			var materials = [];
+			var cubeHolder;
+			var rotSpeed;
+			var cubeCount = 0;
+			var geometry;
+			var windowHalfX;
+			var windowHalfY;
+			var mouseX = 0;
+			var mouseY = 0;
+
+			init();
+
+			function init() {
+
+				// stop the user getting a text cursor
+				document.onselectstart = function() {
+					return false;
+				};
+				//init 3D world
+				var container = document.createElement('div');
+				document.body.appendChild(container);
+				renderer = new THREE.WebGLRenderer({
+					antialias : false,
+					clearAlpha : 1
+				});
+				container.appendChild(renderer.domElement);
+				camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 20, 3000);
+				camera.position.z = 1000;
+				scene = new THREE.Scene();
+				scene.add(camera);
+				//init object to hold cubes and rotate
+				cubeHolder = new THREE.Object3D();
+				scene.add(cubeHolder);
+
+				//add lights
+				var light = new THREE.PointLight(0xffeeaa, 1);
+				light.position = new THREE.Vector3(-1000, 1000, -1000);
+				scene.add(light);
+
+				var light2 = new THREE.PointLight(0xFFFFFF, 1);
+				light2.position = new THREE.Vector3(1000, 1000, 1000);
+				scene.add(light2);
+
+				//init materials
+				for(var i = 0; i < MATERIAL_COUNT; i++) {
+					var material = new THREE.MeshLambertMaterial({
+						opacity : 0.5,
+						blending : THREE.AdditiveBlending,
+						depthTest : false,
+						transparent : true
+					});
+					material.color = new THREE.Color(0xFFFFFF * Math.random());
+					materials.push(material)
+				}
+
+				//init cubes
+				geometry = new THREE.CubeGeometry(CUBE_SIZE, CUBE_SIZE, CUBE_SIZE);
+				addCubes();
+
+				//add stats
+				stats = new Stats();
+				stats.domElement.style.position = 'absolute';
+				stats.domElement.style.top = '0px';
+				container.appendChild(stats.domElement);
+
+				//match speed with Stage3D version in degrees
+				rotSpeed = .3 / 360 * Math.PI * 2;
+
+				window.addEventListener('resize', onWindowResize, false);
+				window.addEventListener('mousemove', onMouseMove, false);
+				window.addEventListener('keydown', onKeyDown, false);
+				onWindowResize(null);
+				animate();
+
+			}
+
+			function addCubes() {
+				cubeCount += CUBE_INCREMENT;
+
+				//init cubes
+				for(var j = 0; j < CUBE_INCREMENT; j++) {
+					var cube = new THREE.Mesh(geometry, materials[j % MATERIAL_COUNT]);
+					//randomize size
+					cube.scale.x = cube.scale.y = cube.scale.z = Math.random() + .1;
+
+					cubeHolder.add(cube);
+					cubes.push(cube);
+
+					cube.position.x = Math.random() * SPREAD - SPREAD / 2;
+					cube.position.y = Math.random() * SPREAD - SPREAD / 2;
+					cube.position.z = Math.random() * SPREAD - SPREAD / 2;
+
+					cube.rotation.x = Math.random() * 2 * Math.PI - Math.PI;
+					cube.rotation.y = Math.random() * 2 * Math.PI - Math.PI;
+					cube.rotation.z = Math.random() * 2 * Math.PI - Math.PI;
+
+				}
+
+				//make more cubes less opaque
+				for(var i = 0; i < MATERIAL_COUNT; i++) {
+					materials[i].opacity = 50 / cubeCount;
+				}
+
+				//set info text
+				document.getElementById("info").innerText = "Upss down for maintenace or i am just bored";
+
+			}
+
+			function onKeyDown(event) {
+				if(event.keyCode == '32') {
+					addCubes();
+				}
+			}
+
+			function onMouseMove(event) {
+				mouseX = event.clientX - windowHalfX;
+				mouseY = event.clientY - windowHalfY;
+			}
+
+			function onWindowResize(event) {
+				windowHalfX = window.innerWidth / 2;
+				windowHalfY = window.innerHeight / 2;
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+				renderer.setSize(window.innerWidth, window.innerHeight);
+			}
+
+			function animate() {
+				requestAnimationFrame(animate);
+				render();
+				stats.update();
+			}
+
+			function render() {
+
+				camera.position.x += (mouseX - camera.position.x) * 0.1;
+				camera.position.y += (-mouseY - camera.position.y) * 0.1;
+				//always look at center
+				camera.lookAt(cubeHolder.position);
+
+				cubeHolder.rotation.y -= rotSpeed;
+				for(var i = 0; i < cubeCount; i++) {
+					cubes[i].rotation.x += rotSpeed;
+				}
+				renderer.render(scene, camera);
+			}
+		</script>
+	</body>
+</html>
